@@ -89,7 +89,8 @@ class DATABASE_CONFIG {
 	);
 
 	function __construct ()
-	{		
+	{		echo $_SERVER['SERVER_NAME'];
+	die();
 		//check to see if server name is set (thanks Frank)
 		if(isset($_SERVER['SERVER_NAME'])){
 			switch($_SERVER['SERVER_NAME']){
